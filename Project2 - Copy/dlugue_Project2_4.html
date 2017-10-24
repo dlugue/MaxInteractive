@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Connections Beyond Contact</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+		<style>
+
+		.selecteddot { width: 10px; height: 10px; box-shadow: 6px 6px 5px #000000;}
+
+		.container {background-color: #000000}
+
+		.HideMe {background-color: #000000; position: absolute; width: 390px; height: 100px;left: 50px; top: 192px}
+		.HideMe2 {background-color: #000000; position: absolute; width: 390px; height: 150px;left: 940px; top: 192px}
+
+
+#div1 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 4vw; position: absolute;
+width: 335px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div2 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 70vw; position: absolute;
+width: 347px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div3 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 4vw; position: absolute;
+width: 335px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div4 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 70vw; position: absolute;
+width: 335px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div5 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 4vw; position: absolute;
+width: 335px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div6 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 70vw; position: absolute;
+width: 335px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div7 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 4vw; position: absolute;
+width: 347px; height: 200px; padding: 10px; font-size: 20px;line-height: 26px}
+
+#div8 {font-family: 'Share Tech Mono', monospace; z-index: 999999999;
+color: #ffffff; top: 30vh; left: 70vw; position: absolute;
+width: 335px; height: 100px; padding: 10px; font-size: 20px;line-height: 26px}
+
+.cloak {width: 100px; height: 50px; position: fixed; background-color: #000000;
+	z-index: 8888888; float: left; margin-left: -45px; margin-top: -45px}
+
+	.Title {font-family: 'Codystar', cursive; position: absolute; color: #ffffff;
+left: 23vw; top: 4.5vh; font-size: 32px;letter-spacing: 8px; margin: 0px}
+
+.Subhead3 {font-family: 'Share Tech Mono', monospace; position: absolute; color: #ffffff;
+left: 33vw; top: 11vh; font-size: 15px;letter-spacing: 8px; margin: 0px}
+
+.Subhead {font-family: 'Codystar', cursive; position: absolute; color: #ffffff;
+left: 30%; top: 30%; font-size: 20px;letter-spacing: 8px; line-height: 26px; width: 550px}
+
+.Subhead2 {font-family: 'Codystar', cursive; position: absolute; color: #ffffff;
+left: 30%; top: 30%; font-size: 20px;letter-spacing: 8px; line-height: 26px; width: 550px}
+
+#test p {
+text-align: center;
+-webkit-animation: first-anim 25s;  /* Safari 4.0 - 8.0 */
+-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+animation: first-anim 25s;
+animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes first-anim {
+	0%  {opacity: 0;}
+90%  {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes first-anim {
+		0%  {opacity: 0;}
+	90%  {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+
+#test2 p {
+	text-align: center;
+	-webkit-animation: first-anim2 25s;  /* Safari 4.0 - 8.0 */
+	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+	animation: first-anim2 25s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes first-anim2 {
+	0%  {opacity: 0;}
+	10%  {opacity: 1;}
+	20%  {opacity: 1;}
+  30%  {opacity: 1;}
+	40%  {opacity: 1;}
+	50%  {opacity: 0;}
+	60%  {opacity: 0;}
+	70%  {opacity: 0;}
+	80%  {opacity: 0;}
+	70%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes first-anim2 {
+	0%  {opacity: 0;}
+	10%  {opacity: 1;}
+	20%  {opacity: 1;}
+  30%  {opacity: 1;}
+	40%  {opacity: 1;}
+	50%  {opacity: 0;}
+	60%  {opacity: 0;}
+	70%  {opacity: 0;}
+	80%  {opacity: 0;}
+	70%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+
+
+#test3 p {
+	text-align: center;
+	-webkit-animation: first-anim3 25s;  /* Safari 4.0 - 8.0 */
+	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+	animation: first-anim3 25s;
+	animation-fill-mode: forwards;
+    }
+
+
+
+@-webkit-keyframes first-anim3 {
+	0%  {opacity: 0;}
+	10%  {opacity: 0;}
+	20%  {opacity: 0;}
+  30%  {opacity: 0;}
+	40%  {opacity: 0;}
+	50%  {opacity: 1;}
+	60%  {opacity: 1;}
+	70%  {opacity: 1;}
+	80%  {opacity: 1;}
+	90%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes first-anim3 {
+	0%  {opacity: 0;}
+	10%  {opacity: 0;}
+	20%  {opacity: 0;}
+  30%  {opacity: 0;}
+	40%  {opacity: 0;}
+	50%  {opacity: 1;}
+	60%  {opacity: 1;}
+	70%  {opacity: 1;}
+	80%  {opacity: 1;}
+	90%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+
+#test6 p {
+	text-align: center;
+	-webkit-animation: first-anim4 25s;  /* Safari 4.0 - 8.0 */
+	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+	animation: first-anim4 25s;
+	animation-fill-mode: forwards;
+    }
+
+
+@-webkit-keyframes first-anim4 {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes first-anim4 {
+	0%  {opacity: 0;}
+	20%  {opacity: 0;}
+	40%  {opacity: 0;}
+	60%  {opacity: 0;}
+	80%  {opacity: 0;}
+	90%  {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+
+
+.click1 {position: absolute; text-align: center; left: 55vw; top: 45vh; z-index: 999999;
+	background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px; border: 2px solid white;font-size: 2px}
+
+	.click2 {position: absolute; text-align: center; left: 46vw; top: 48vh; z-index: 999999;
+		background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px; border: 2px solid white; font-size: 2px}
+
+		.click3 {position: absolute; text-align: center; left: 55vw; top: 58vh; z-index: 999999;
+			background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px;border: 2px solid white; font-size: 2px}
+
+			.click4 {position: absolute; text-align: center; left: 48vw; top: 63vh; z-index: 999999;
+				background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px;border: 2px solid white; font-size: 2px}
+
+				.click5 {position: absolute; text-align: center; left: 52vw; top: 44vh; z-index: 999999;
+					background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px;border: 2px solid white; font-size: 2px}
+
+					.click6 {position: absolute; text-align: center; left: 44vw; top: 56vh; z-index: 999999;
+						background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px;border: 2px solid white; font-size: 2px}
+
+						.click7 {position: absolute; text-align: center; left: 52vw; top: 54vh; z-index: 999999;
+							background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px;border: 2px solid white; font-size: 2px}
+
+							.click8 {position: absolute; text-align: center; left: 47vw; top: 57vh; z-index: 999999;
+								background-color: #fff600;color: #fff600; padding: 5px;border-radius: 30px;border: 2px solid white; font-size: 2px}
+
+								body {border: 40px solid black;margin: 0px;width: 100%; overflow-x:hidden; overflow-y: hidden;background-color:black;}
+								canvas {margin-top: -30px;  margin-bottom: -5px; margin-left: -30px}
+
+
+		</style>
+		<style>
+
+		.FadeMeOut {background-color: #000000; position: absolute; left: 10%; top: 10%; height: 90vh; width: 90vw; border-radius: 500px;
+animation: FadeMeOut 4s; animation-delay: 22.5s; animation-fill-mode: forwards;
+		}
+
+		@keyframes FadeMeOut {
+			from {
+				opacity: 1;
+			}
+
+			to {
+				opacity: 0;
+			}
+		}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="cloak"></div>
+
+		<div><p class="FadeMeOut">Fade Me Out</p></div>
+
+
+		<div id="test"><p class="Title">CONNECTIONS BEYOND CONTACT</p><div>
+
+			<div id="test2"><p class="Subhead">The stigma associated with online friendship,
+				that “real” intimacy can only be created via physical encounter, has not faded.</p><div>
+
+					<div id="test3"><p class="Subhead2">There are a multitude of people from different countries,
+						different upbringings, different walks of life who have real friendships. Connections that could
+						only be possible through the internet.</p><div>
+
+							<div id="test6"><p class="Subhead3">THIS IS WHAT THEY MEAN TO US</p></div>
+
+
+
+
+
+
+<div>
+		<div class="toggle" id="div1" style="display:none"><p1>
+			<span style="color: #fff600;margin-left:-10px">"</span>Being able to share ideas with like minded people is an indispensable experience for creative individuals.
+ This is easily facilitated by online chat groups that include people from all around the world.<span style="color: #fff600">"</span>
+ <br><span style="font-size: 15px; color: #b5b5b5">—Ashutan23</span>
+		</p1></div>
+
+		<div class="toggle" id="div2" style="display:none"><p2>
+			<span style="color: #fff600;margin-left:-10px">"</span>Through the internet I have been able to connect with
+			multiple people who I truly value and share a connection with.<span style="color: #fff600">"</span>
+			<br><span style="font-size: 15px; color: #b5b5b5">—HoddTodd</span>
+		</p2></div>
+
+		<div class="toggle" id="div3" style="display:none"><p3>
+			<span style="color: #fff600;margin-left:-10px">"</span>Never considered them to be on the same level until you actually become close with one.
+			They're just as valid as any other form of friendships and the fact that we can feel close to
+			someone only assuming they're another person somewhere around the globe is a testament to that.<span style="color: #fff600">"</span>
+			<br><span style="font-size: 15px; color: #b5b5b5">—Dialga9182</span>
+		</p3></div>
+
+		<div class="toggle" id="div4" style="display:none"><p4>
+			<span style="color: #fff600;margin-left:-10px">"</span>They mean alot for me because Online is the only place where I can find other people that
+			 share my interest for certain Niche hobbies. Like, I am a artist but I don't know a single person IRL who draws.<span style="color: #fff600">"</span>
+			 <br><span style="font-size: 15px; color: #b5b5b5">—Lightning Black</span>
+		</p4></div>
+
+		<div class="toggle" id="div5" style="display:none"><p5>
+			<span style="color: #fff600;margin-left:-10px">"</span>The people who live in my computer (and smartphone, for that matter) matter just as much. The connections,
+			 the care, the love? Those are all just as real. The stories we share with each other in our online spaces
+			  bring people into our lives.<span style="color: #fff600">"</span>
+				<br><span style="font-size: 15px; color: #b5b5b5">—CrusherG</span>
+		</p5></div>
+
+		<div class="toggle" id="div6" style="display:none"><p6>
+<span style="color: #fff600;margin-left:-10px">"</span>They mean an awful lot to me. Sometimes it is better that you have
+a physical distance between your good friends, that way situations that happen to me can be discussed more
+objectively when otherwise. Also my online friends live outside my own country so without the net I wouldn't
+met them in the first place.<span style="color: #fff600">"</span>
+<br><span style="font-size: 15px; color: #b5b5b5">—Subsonic44</span>
+</p6></div>
+
+<div class="toggle" id="div7" style="display:none"><p7>
+	<span style="color: #fff600;margin-left:-10px">"</span>I feel like some online connections can be as strong as those made in real life;
+	However, I feel like they require more investment to reach that same level.
+	I've made some friends online that I would consider closer friends than many of my real life friends.<span style="color: #fff600">"</span>
+<br><span style="font-size: 15px; color: #b5b5b5">—Megahobbit</span>
+</p7></div>
+
+<div class="toggle" id="div8" style="display:none"><p8>
+	<span style="color: #fff600;margin-left:-10px">"</span>Friendship is a mutual connection between people who make time to offer each other honest advice and support.
+	Frankly, it’s absurd to think that friends made online aren’t able to fulfill that duty!<span style="color: #fff600">"</span>
+<br><span style="font-size: 15px; color: #b5b5b5">—Sanaa_Amir</span>
+</p8></div>
+</div>
+
+<div id="test6"><p>
+
+<a href="javascript:toggleDiv('div1');" class="click1 reddot">O</a>
+
+<a href="javascript:toggleDiv('div2');" class="click2 reddot">O</a>
+
+<a href="javascript:toggleDiv('div3');" class="click3 reddot">O</a>
+<a href="javascript:toggleDiv('div4');" class="click4 reddot">O</a>
+<a href="javascript:toggleDiv('div5');" class="click5 reddot">O</a>
+<a href="javascript:toggleDiv('div6');" class="click6 reddot">O</a>
+<a href="javascript:toggleDiv('div7');" class="click7 reddot">O</a>
+<a href="javascript:toggleDiv('div8');" class="click8 reddot">O</a>
+</p></div>
+
+
+		<div id="container"></div>
+
+		<script src="http://threejs.org/build/three.js"></script>
+
+		<script src="http://threejs.org/examples/js/renderers/Projector.js"></script>
+		<script src="http://threejs.org/examples/js/renderers/CanvasRenderer.js"></script>
+
+		<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+		<script>
+
+			var container, stats;
+			var camera, scene, renderer;
+			var group;
+			var mouseX = 0, mouseY = 0;
+
+			var windowHalfX = window.innerWidth / 2;
+			var windowHalfY = window.innerHeight / 2;
+
+			init();
+			animate();
+
+			function init() {
+
+				container = document.getElementById( 'container' );
+
+				camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.z = 500;
+
+				scene = new THREE.Scene();
+
+				group = new THREE.Group();
+				scene.add( group );
+
+				// earth
+
+				var loader = new THREE.TextureLoader();
+				loader.load( "pbNE8fm.png", function ( texture ) {
+
+					var geometry = new THREE.SphereGeometry( 200, 20, 20 );
+
+					var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
+					var mesh = new THREE.Mesh( geometry, material );
+					group.add( mesh );
+
+				} );
+
+				// shadow
+
+				var canvas = document.createElement( 'canvas' );
+				canvas.width = 128;
+				canvas.height = 128;
+
+				var context = canvas.getContext( '2d' );
+				var gradient = context.createRadialGradient(
+					canvas.width / 2,
+					canvas.height / 2,
+					0,
+					canvas.width / 2,
+					canvas.height / 2,
+					canvas.width / 2
+				);
+
+				//
+
+
+				context.fillStyle = gradient;
+				context.fillRect( 0, 0, canvas.width, canvas.height );
+
+				var texture = new THREE.CanvasTexture( canvas );
+
+				var geometry = new THREE.PlaneBufferGeometry( 300, 300, 3, 3 );
+				var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
+
+				var mesh = new THREE.Mesh( geometry, material );
+				mesh.position.y = - 250;
+				mesh.rotation.x = - Math.PI / 2;
+				group.add( mesh );
+
+				renderer = new THREE.CanvasRenderer();
+				renderer.setClearColor( 000000 );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+
+				stats = new Stats();
+				container.appendChild( stats.dom );
+
+				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			//
+
+
+
+			function onWindowResize() {
+
+				windowHalfX = window.innerWidth / 2;
+				windowHalfY = window.innerHeight / 2;
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function onDocumentMouseMove( event ) {
+
+				mouseX = ( event.clientX - windowHalfX );
+				mouseY = ( event.clientY - windowHalfY );
+
+			}
+
+			//
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+				stats.update();
+
+			}
+
+			function render() {
+
+				camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+				camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
+				camera.lookAt( scene.position );
+
+				group.rotation.y += 0.002;
+
+				renderer.render( scene, camera );
+
+			}
+
+			$("#test p").addClass("load");
+
+			$(document).ready(function(){
+				 $('.reddot').click(function(){
+						 $('.selecteddot').removeClass('selecteddot');
+						 $(this).addClass('selecteddot');
+				 });
+			});
+
+		</script>
+
+		<script>
+		function toggleDiv(divId) {
+	    $("#"+divId).toggle("slow", "linear");
+	    $('.toggle').not($("#"+divId)).hide("slow", "linear");
+	}
+		</script>
+
+
+	</body>
+</html>
